@@ -3,8 +3,8 @@ language: objective-c
 
 env:
   global:
-    - PROJECT=SwiftyExtensions.xcodeproj
-    - SCHEME=SwiftyExtensions
+    - PROJECT=SwiftyUtilities.xcodeproj
+    - SCHEME=SwiftyUtilities
 
 install:
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet

@@ -18,6 +18,7 @@
 		C5732FF51EE577CD00EBBE3A /* UITableView+Dequeuing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FEE1EE577CD00EBBE3A /* UITableView+Dequeuing.swift */; };
 		C5732FF81EE5782200EBBE3A /* UIColor+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FF71EE5782200EBBE3A /* UIColor+Initializers.swift */; };
 		C5732FFA1EE5788100EBBE3A /* UIColor+Highlighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FF91EE5788100EBBE3A /* UIColor+Highlighting.swift */; };
+		C5732FFC1EE57AFA00EBBE3A /* UIImage+withColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FFB1EE57AFA00EBBE3A /* UIImage+withColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C5732FEE1EE577CD00EBBE3A /* UITableView+Dequeuing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeuing.swift"; sourceTree = "<group>"; };
 		C5732FF71EE5782200EBBE3A /* UIColor+Initializers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Initializers.swift"; sourceTree = "<group>"; };
 		C5732FF91EE5788100EBBE3A /* UIColor+Highlighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Highlighting.swift"; sourceTree = "<group>"; };
+		C5732FFB1EE57AFA00EBBE3A /* UIImage+withColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+withColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				C5732FE61EE577CD00EBBE3A /* String+Size.swift */,
 				C5732FE71EE577CD00EBBE3A /* UIImage+Masking.swift */,
 				C5732FE81EE577CD00EBBE3A /* UIView+Pinning.swift */,
+				C5732FFB1EE57AFA00EBBE3A /* UIImage+withColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				C5732FFA1EE5788100EBBE3A /* UIColor+Highlighting.swift in Sources */,
 				C5732FEF1EE577CD00EBBE3A /* String+Size.swift in Sources */,
 				C5732FF81EE5782200EBBE3A /* UIColor+Initializers.swift in Sources */,
+				C5732FFC1EE57AFA00EBBE3A /* UIImage+withColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
