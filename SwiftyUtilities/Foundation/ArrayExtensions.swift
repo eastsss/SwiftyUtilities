@@ -18,7 +18,7 @@ extension Array {
     }
 }
 
-extension Array where Element == Int {
+extension Array where Iterator.Element == Int {
     public func indexPaths(section: Int = 0) -> [IndexPath] {
         return map({ IndexPath(row: $0, section: section) })
     }
