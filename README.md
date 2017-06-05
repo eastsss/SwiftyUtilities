@@ -1,17 +1,17 @@
-# SwiftyExtensions
+# SwiftyUtilities
 
-[![CI Status](http://img.shields.io/travis/eastsss/SwiftyExtensions.svg?style=flat)](https://travis-ci.org/eastsss/SwiftyExtensions)
-[![Version](https://img.shields.io/cocoapods/v/SwiftyExtensions.svg?style=flat)](http://cocoapods.org/pods/SwiftyExtensions)
-[![License](https://img.shields.io/cocoapods/l/SwiftyExtensions.svg?style=flat)](http://cocoapods.org/pods/SwiftyExtensions)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftyExtensions.svg?style=flat)](http://cocoapods.org/pods/SwiftyExtensions)
+[![CI Status](http://img.shields.io/travis/eastsss/SwiftyUtilities.svg?style=flat)](https://travis-ci.org/eastsss/SwiftyUtilities)
+[![Version](https://img.shields.io/cocoapods/v/SwiftyUtilities.svg?style=flat)](http://cocoapods.org/pods/SwiftyUtilities)
+[![License](https://img.shields.io/cocoapods/l/SwiftyUtilities.svg?style=flat)](http://cocoapods.org/pods/SwiftyUtilities)
+[![Platform](https://img.shields.io/cocoapods/p/SwiftyUtilities.svg?style=flat)](http://cocoapods.org/pods/SwiftyUtilities)
 
 ## Installation
 
-SwiftyExtensions is available through [CocoaPods](http://cocoapods.org). To install
+SwiftyUtilities is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "SwiftyExtensions"
+pod "SwiftyUtilities"
 ```
 
 ## Author
@@ -20,4 +20,4 @@ eastsss, anatox91@yandex.ru
 
 ## License
 
-SwiftyExtensions is available under the MIT license. See the LICENSE file for more info.
+SwiftyUtilities is available under the MIT license. See the LICENSE file for more info.
