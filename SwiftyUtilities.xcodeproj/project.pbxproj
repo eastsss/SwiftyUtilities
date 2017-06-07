@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5509FBE1EE8365D00524E71 /* Response+Argo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FBD1EE8365D00524E71 /* Response+Argo.swift */; };
+		C5509FC01EE8366D00524E71 /* SignalProducer+Argo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FBF1EE8366D00524E71 /* SignalProducer+Argo.swift */; };
+		C5509FC21EE836D800524E71 /* RawRepresentable+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC11EE836D800524E71 /* RawRepresentable+Decoding.swift */; };
+		C5509FC41EE8371500524E71 /* URL+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC31EE8371500524E71 /* URL+Coding.swift */; };
+		C5509FC61EE838CE00524E71 /* CGSize+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC51EE838CE00524E71 /* CGSize+Decodable.swift */; };
+		C5509FC91EE839C700524E71 /* Reactive+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC81EE839C700524E71 /* Reactive+UINavigationController.swift */; };
+		C5509FCB1EE839DE00524E71 /* Reactive+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FCA1EE839DE00524E71 /* Reactive+UITableView.swift */; };
+		C5509FCD1EE83A1400524E71 /* Reactive+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FCC1EE83A1400524E71 /* Reactive+UICollectionView.swift */; };
+		C5509FCF1EE83A3E00524E71 /* Reactive+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FCE1EE83A3E00524E71 /* Reactive+UIViewController.swift */; };
 		C5732FCB1EE569F800EBBE3A /* SwiftyUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C5732FC91EE569F800EBBE3A /* SwiftyUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5732FDB1EE5732400EBBE3A /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FD21EE5732400EBBE3A /* ArrayExtensions.swift */; };
 		C5732FEF1EE577CD00EBBE3A /* String+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FE61EE577CD00EBBE3A /* String+Size.swift */; };
@@ -25,6 +34,15 @@
 /* Begin PBXFileReference section */
 		149C81DDA2BC253FBEAFDE45 /* Pods-SwiftyUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyUtilities.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyUtilities/Pods-SwiftyUtilities.release.xcconfig"; sourceTree = "<group>"; };
 		84F6134751335201EBC5F2A7 /* Pods_SwiftyUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5509FBD1EE8365D00524E71 /* Response+Argo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Argo.swift"; sourceTree = "<group>"; };
+		C5509FBF1EE8366D00524E71 /* SignalProducer+Argo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Argo.swift"; sourceTree = "<group>"; };
+		C5509FC11EE836D800524E71 /* RawRepresentable+Decoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RawRepresentable+Decoding.swift"; sourceTree = "<group>"; };
+		C5509FC31EE8371500524E71 /* URL+Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Coding.swift"; sourceTree = "<group>"; };
+		C5509FC51EE838CE00524E71 /* CGSize+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Decodable.swift"; sourceTree = "<group>"; };
+		C5509FC81EE839C700524E71 /* Reactive+UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UINavigationController.swift"; sourceTree = "<group>"; };
+		C5509FCA1EE839DE00524E71 /* Reactive+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UITableView.swift"; sourceTree = "<group>"; };
+		C5509FCC1EE83A1400524E71 /* Reactive+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UICollectionView.swift"; sourceTree = "<group>"; };
+		C5509FCE1EE83A3E00524E71 /* Reactive+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UIViewController.swift"; sourceTree = "<group>"; };
 		C5732FC61EE569F800EBBE3A /* SwiftyUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5732FC91EE569F800EBBE3A /* SwiftyUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyUtilities.h; sourceTree = "<group>"; };
 		C5732FCA1EE569F800EBBE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +80,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C5509FBC1EE835FE00524E71 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C5509FBD1EE8365D00524E71 /* Response+Argo.swift */,
+				C5509FBF1EE8366D00524E71 /* SignalProducer+Argo.swift */,
+				C5509FC11EE836D800524E71 /* RawRepresentable+Decoding.swift */,
+				C5509FC31EE8371500524E71 /* URL+Coding.swift */,
+				C5509FC51EE838CE00524E71 /* CGSize+Decodable.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C5509FC71EE8397800524E71 /* Reactive */ = {
+			isa = PBXGroup;
+			children = (
+				C5509FC81EE839C700524E71 /* Reactive+UINavigationController.swift */,
+				C5509FCA1EE839DE00524E71 /* Reactive+UITableView.swift */,
+				C5509FCC1EE83A1400524E71 /* Reactive+UICollectionView.swift */,
+				C5509FCE1EE83A3E00524E71 /* Reactive+UIViewController.swift */,
+			);
+			path = Reactive;
+			sourceTree = "<group>";
+		};
 		C5732FBC1EE569F800EBBE3A = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +126,8 @@
 			children = (
 				C5732FD11EE5732400EBBE3A /* Foundation */,
 				C5732FD31EE5732400EBBE3A /* UIKit */,
+				C5509FBC1EE835FE00524E71 /* Networking */,
+				C5509FC71EE8397800524E71 /* Reactive */,
 				C5732FC91EE569F800EBBE3A /* SwiftyUtilities.h */,
 				C5732FCA1EE569F800EBBE3A /* Info.plist */,
 			);
@@ -290,12 +333,21 @@
 				C5732FF51EE577CD00EBBE3A /* UITableView+Dequeuing.swift in Sources */,
 				C5732FF21EE577CD00EBBE3A /* NibLoader.swift in Sources */,
 				C5732FDB1EE5732400EBBE3A /* ArrayExtensions.swift in Sources */,
+				C5509FC61EE838CE00524E71 /* CGSize+Decodable.swift in Sources */,
+				C5509FCF1EE83A3E00524E71 /* Reactive+UIViewController.swift in Sources */,
+				C5509FCD1EE83A1400524E71 /* Reactive+UICollectionView.swift in Sources */,
 				C5732FF01EE577CD00EBBE3A /* UIImage+Masking.swift in Sources */,
 				C5732FF41EE577CD00EBBE3A /* UICollectionView+Dequeuing.swift in Sources */,
+				C5509FC41EE8371500524E71 /* URL+Coding.swift in Sources */,
 				C5732FF11EE577CD00EBBE3A /* UIView+Pinning.swift in Sources */,
 				C5732FFA1EE5788100EBBE3A /* UIColor+Highlighting.swift in Sources */,
 				C5732FEF1EE577CD00EBBE3A /* String+Size.swift in Sources */,
+				C5509FC91EE839C700524E71 /* Reactive+UINavigationController.swift in Sources */,
+				C5509FBE1EE8365D00524E71 /* Response+Argo.swift in Sources */,
 				C5732FF81EE5782200EBBE3A /* UIColor+Initializers.swift in Sources */,
+				C5509FC01EE8366D00524E71 /* SignalProducer+Argo.swift in Sources */,
+				C5509FC21EE836D800524E71 /* RawRepresentable+Decoding.swift in Sources */,
+				C5509FCB1EE839DE00524E71 /* Reactive+UITableView.swift in Sources */,
 				C5732FFC1EE57AFA00EBBE3A /* UIImage+withColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
