@@ -30,5 +30,10 @@ Pod::Spec.new do |s|
   s.subspec "Reactive" do |ss|
       ss.source_files = 'SwiftyUtilities/Reactive/**/*'
       ss.dependency 'ReactiveCocoa', '~> 5.0.2'
-  end  
+  end
+
+  s.subspec "ReactivePortionLoader" do |ss|
+      ss.source_files = 'SwiftyUtilities/ReactivePortionLoader/**/*'
+      ss.dependency 'SwiftyUtilities/Networking'
+  end
 end

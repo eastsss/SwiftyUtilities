@@ -19,6 +19,7 @@
 		C5509FD11EE83E5600524E71 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD01EE83E5600524E71 /* NetworkProvider.swift */; };
 		C5509FD31EE83E9500524E71 /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD21EE83E9500524E71 /* AppUtilities.swift */; };
 		C5509FD51EE83F2100524E71 /* KeyValueStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD41EE83F2100524E71 /* KeyValueStoring.swift */; };
+		C5509FD81EE8415100524E71 /* ReactivePortionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD71EE8415100524E71 /* ReactivePortionLoader.swift */; };
 		C5732FCB1EE569F800EBBE3A /* SwiftyUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C5732FC91EE569F800EBBE3A /* SwiftyUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5732FDB1EE5732400EBBE3A /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FD21EE5732400EBBE3A /* ArrayExtensions.swift */; };
 		C5732FEF1EE577CD00EBBE3A /* String+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FE61EE577CD00EBBE3A /* String+Size.swift */; };
@@ -49,6 +50,7 @@
 		C5509FD01EE83E5600524E71 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		C5509FD21EE83E9500524E71 /* AppUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
 		C5509FD41EE83F2100524E71 /* KeyValueStoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueStoring.swift; sourceTree = "<group>"; };
+		C5509FD71EE8415100524E71 /* ReactivePortionLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactivePortionLoader.swift; sourceTree = "<group>"; };
 		C5732FC61EE569F800EBBE3A /* SwiftyUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5732FC91EE569F800EBBE3A /* SwiftyUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyUtilities.h; sourceTree = "<group>"; };
 		C5732FCA1EE569F800EBBE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 			path = Reactive;
 			sourceTree = "<group>";
 		};
+		C5509FD61EE8414600524E71 /* ReactivePortionLoader */ = {
+			isa = PBXGroup;
+			children = (
+				C5509FD71EE8415100524E71 /* ReactivePortionLoader.swift */,
+			);
+			path = ReactivePortionLoader;
+			sourceTree = "<group>";
+		};
 		C5732FBC1EE569F800EBBE3A = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 				C5732FD31EE5732400EBBE3A /* UIKit */,
 				C5509FBC1EE835FE00524E71 /* Networking */,
 				C5509FC71EE8397800524E71 /* Reactive */,
+				C5509FD61EE8414600524E71 /* ReactivePortionLoader */,
 				C5732FC91EE569F800EBBE3A /* SwiftyUtilities.h */,
 				C5732FCA1EE569F800EBBE3A /* Info.plist */,
 			);
@@ -349,6 +360,7 @@
 				C5509FCD1EE83A1400524E71 /* Reactive+UICollectionView.swift in Sources */,
 				C5732FF01EE577CD00EBBE3A /* UIImage+Masking.swift in Sources */,
 				C5732FF41EE577CD00EBBE3A /* UICollectionView+Dequeuing.swift in Sources */,
+				C5509FD81EE8415100524E71 /* ReactivePortionLoader.swift in Sources */,
 				C5509FC41EE8371500524E71 /* URL+Coding.swift in Sources */,
 				C5732FF11EE577CD00EBBE3A /* UIView+Pinning.swift in Sources */,
 				C5732FFA1EE5788100EBBE3A /* UIColor+Highlighting.swift in Sources */,
