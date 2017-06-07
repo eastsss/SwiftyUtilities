@@ -11,11 +11,11 @@ import ReactiveSwift
 import ReactiveCocoa
 
 extension Reactive where Base: UINavigationController {
-    func pushViewController(animated: Bool) -> BindingTarget<UIViewController> {
+    public func pushViewController(animated: Bool) -> BindingTarget<UIViewController> {
         return makeBindingTarget { $0.pushViewController($1, animated: animated) }
     }
     
-    func popViewController(animated: Bool) -> BindingTarget<()> {
+    public func popViewController(animated: Bool) -> BindingTarget<()> {
         return makeBindingTarget { base, _ in base.popViewController(animated: true) }
     }
 }

@@ -10,11 +10,11 @@ import ReactiveSwift
 import ReactiveCocoa
 
 extension Reactive where Base: UIViewController {
-    func presentViewController(animated: Bool) -> BindingTarget<UIViewController> {
+    public func presentViewController(animated: Bool) -> BindingTarget<UIViewController> {
         return makeBindingTarget { $0.present($1, animated: animated) }
     }
     
-    func dismissViewController(animated: Bool) -> BindingTarget<()> {
+    public func dismissViewController(animated: Bool) -> BindingTarget<()> {
         return makeBindingTarget { base, _ in base.dismiss(animated: true) }
     }
 }

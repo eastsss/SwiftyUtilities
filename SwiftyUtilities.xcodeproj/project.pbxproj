@@ -16,6 +16,9 @@
 		C5509FCB1EE839DE00524E71 /* Reactive+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FCA1EE839DE00524E71 /* Reactive+UITableView.swift */; };
 		C5509FCD1EE83A1400524E71 /* Reactive+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FCC1EE83A1400524E71 /* Reactive+UICollectionView.swift */; };
 		C5509FCF1EE83A3E00524E71 /* Reactive+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FCE1EE83A3E00524E71 /* Reactive+UIViewController.swift */; };
+		C5509FD11EE83E5600524E71 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD01EE83E5600524E71 /* NetworkProvider.swift */; };
+		C5509FD31EE83E9500524E71 /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD21EE83E9500524E71 /* AppUtilities.swift */; };
+		C5509FD51EE83F2100524E71 /* KeyValueStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD41EE83F2100524E71 /* KeyValueStoring.swift */; };
 		C5732FCB1EE569F800EBBE3A /* SwiftyUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C5732FC91EE569F800EBBE3A /* SwiftyUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5732FDB1EE5732400EBBE3A /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FD21EE5732400EBBE3A /* ArrayExtensions.swift */; };
 		C5732FEF1EE577CD00EBBE3A /* String+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FE61EE577CD00EBBE3A /* String+Size.swift */; };
@@ -43,6 +46,9 @@
 		C5509FCA1EE839DE00524E71 /* Reactive+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UITableView.swift"; sourceTree = "<group>"; };
 		C5509FCC1EE83A1400524E71 /* Reactive+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UICollectionView.swift"; sourceTree = "<group>"; };
 		C5509FCE1EE83A3E00524E71 /* Reactive+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UIViewController.swift"; sourceTree = "<group>"; };
+		C5509FD01EE83E5600524E71 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		C5509FD21EE83E9500524E71 /* AppUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
+		C5509FD41EE83F2100524E71 /* KeyValueStoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueStoring.swift; sourceTree = "<group>"; };
 		C5732FC61EE569F800EBBE3A /* SwiftyUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5732FC91EE569F800EBBE3A /* SwiftyUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyUtilities.h; sourceTree = "<group>"; };
 		C5732FCA1EE569F800EBBE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 				C5509FC11EE836D800524E71 /* RawRepresentable+Decoding.swift */,
 				C5509FC31EE8371500524E71 /* URL+Coding.swift */,
 				C5509FC51EE838CE00524E71 /* CGSize+Decodable.swift */,
+				C5509FD01EE83E5600524E71 /* NetworkProvider.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -138,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				C5732FD21EE5732400EBBE3A /* ArrayExtensions.swift */,
+				C5509FD21EE83E9500524E71 /* AppUtilities.swift */,
+				C5509FD41EE83F2100524E71 /* KeyValueStoring.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -331,6 +340,8 @@
 			files = (
 				C5732FF31EE577CD00EBBE3A /* ReuseProtocols.swift in Sources */,
 				C5732FF51EE577CD00EBBE3A /* UITableView+Dequeuing.swift in Sources */,
+				C5509FD31EE83E9500524E71 /* AppUtilities.swift in Sources */,
+				C5509FD51EE83F2100524E71 /* KeyValueStoring.swift in Sources */,
 				C5732FF21EE577CD00EBBE3A /* NibLoader.swift in Sources */,
 				C5732FDB1EE5732400EBBE3A /* ArrayExtensions.swift in Sources */,
 				C5509FC61EE838CE00524E71 /* CGSize+Decodable.swift in Sources */,
@@ -343,6 +354,7 @@
 				C5732FFA1EE5788100EBBE3A /* UIColor+Highlighting.swift in Sources */,
 				C5732FEF1EE577CD00EBBE3A /* String+Size.swift in Sources */,
 				C5509FC91EE839C700524E71 /* Reactive+UINavigationController.swift in Sources */,
+				C5509FD11EE83E5600524E71 /* NetworkProvider.swift in Sources */,
 				C5509FBE1EE8365D00524E71 /* Response+Argo.swift in Sources */,
 				C5732FF81EE5782200EBBE3A /* UIColor+Initializers.swift in Sources */,
 				C5509FC01EE8366D00524E71 /* SignalProducer+Argo.swift in Sources */,

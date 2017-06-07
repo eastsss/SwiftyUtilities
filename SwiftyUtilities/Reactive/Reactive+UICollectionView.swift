@@ -11,7 +11,7 @@ import ReactiveSwift
 import ReactiveCocoa
 
 extension Reactive where Base: UICollectionView {
-    var batchUpdate: BindingTarget<(insertions: [Int], modifications: [Int], deletions: [Int])> {
+    public var batchUpdate: BindingTarget<(insertions: [Int], modifications: [Int], deletions: [Int])> {
         return makeBindingTarget { base, update in
             base.performBatchUpdates({
                 base.insertItems(at: update.insertions.indexPaths())
@@ -21,7 +21,7 @@ extension Reactive where Base: UICollectionView {
         }
     }
     
-    var reloadFirstSection: BindingTarget<()> {
+    public var reloadFirstSection: BindingTarget<()> {
         return makeBindingTarget { base, _ in
             if base.window == nil {
                 base.reloadSections(IndexSet(integer: 0))

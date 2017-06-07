@@ -11,7 +11,7 @@ import ReactiveSwift
 import ReactiveCocoa
 
 extension Reactive where Base: UITableView {
-    func batchUpdate(animation: UITableViewRowAnimation) -> BindingTarget<(insertions: [Int], modifications: [Int], deletions: [Int])> {
+    public func batchUpdate(animation: UITableViewRowAnimation) -> BindingTarget<(insertions: [Int], modifications: [Int], deletions: [Int])> {
         return makeBindingTarget { base, update in
             base.beginUpdates()
             base.insertRows(at: update.insertions.indexPaths(), with: animation)
