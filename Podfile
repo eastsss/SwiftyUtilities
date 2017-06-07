@@ -1,0 +1,22 @@
+platform :ios, '8.0'
+
+workspace 'SwiftyUtilities'
+project 'SwiftyUtilities.xcodeproj'
+
+use_frameworks!
+
+target :'SwiftyUtilities' do
+	platform :ios, '9.0'
+	project 'SwiftyUtilities.xcodeproj'
+
+	inhibit_all_warnings!
+    
+    #network requests and mapping
+    pod 'Moya/ReactiveSwift', '~> 8.0.3'
+    pod 'Argo', '~> 4.1.2'
+    pod 'Curry', '~> 3.0.0'
+    pod 'Ogra', '~> 4.1.1'
+    
+    #misc
+    pod 'ReactiveCocoa', '~> 5.0.2'
+end

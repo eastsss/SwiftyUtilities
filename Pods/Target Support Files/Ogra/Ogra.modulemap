@@ -1,0 +1,6 @@
+framework module Ogra {
+  umbrella header "Ogra-umbrella.h"
+
+  export *
+  module * { export * }
+}
