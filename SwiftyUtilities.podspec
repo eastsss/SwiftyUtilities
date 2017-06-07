@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Networking" do |ss|
       ss.source_files = 'SwiftyUtilities/Networking/**/*'
+      ss.dependency 'SwiftyUtilities/Foundation'
       ss.dependency 'Moya/ReactiveSwift', '~> 8.0.3'
       ss.dependency 'Argo', '~> 4.1.2'
       ss.dependency 'Curry', '~> 3.0.0'
@@ -29,11 +30,13 @@ Pod::Spec.new do |s|
 
   s.subspec "Reactive" do |ss|
       ss.source_files = 'SwiftyUtilities/Reactive/**/*'
+      ss.dependency 'SwiftyUtilities/Foundation'
       ss.dependency 'ReactiveCocoa', '~> 5.0.2'
   end
 
   s.subspec "ReactivePortionLoader" do |ss|
       ss.source_files = 'SwiftyUtilities/ReactivePortionLoader/**/*'
+      ss.dependency 'SwiftyUtilities/Foundation'
       ss.dependency 'SwiftyUtilities/Networking'
   end
 end
