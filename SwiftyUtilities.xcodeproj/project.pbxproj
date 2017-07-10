@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C5509FBE1EE8365D00524E71 /* Response+Argo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FBD1EE8365D00524E71 /* Response+Argo.swift */; };
 		C5509FC01EE8366D00524E71 /* SignalProducer+Argo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FBF1EE8366D00524E71 /* SignalProducer+Argo.swift */; };
-		C5509FC21EE836D800524E71 /* RawRepresentable+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC11EE836D800524E71 /* RawRepresentable+Decoding.swift */; };
 		C5509FC41EE8371500524E71 /* URL+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC31EE8371500524E71 /* URL+Coding.swift */; };
 		C5509FC61EE838CE00524E71 /* CGSize+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC51EE838CE00524E71 /* CGSize+Decodable.swift */; };
 		C5509FC91EE839C700524E71 /* Reactive+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC81EE839C700524E71 /* Reactive+UINavigationController.swift */; };
@@ -40,7 +39,6 @@
 		84F6134751335201EBC5F2A7 /* Pods_SwiftyUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5509FBD1EE8365D00524E71 /* Response+Argo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Argo.swift"; sourceTree = "<group>"; };
 		C5509FBF1EE8366D00524E71 /* SignalProducer+Argo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Argo.swift"; sourceTree = "<group>"; };
-		C5509FC11EE836D800524E71 /* RawRepresentable+Decoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RawRepresentable+Decoding.swift"; sourceTree = "<group>"; };
 		C5509FC31EE8371500524E71 /* URL+Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Coding.swift"; sourceTree = "<group>"; };
 		C5509FC51EE838CE00524E71 /* CGSize+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Decodable.swift"; sourceTree = "<group>"; };
 		C5509FC81EE839C700524E71 /* Reactive+UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UINavigationController.swift"; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			children = (
 				C5509FBD1EE8365D00524E71 /* Response+Argo.swift */,
 				C5509FBF1EE8366D00524E71 /* SignalProducer+Argo.swift */,
-				C5509FC11EE836D800524E71 /* RawRepresentable+Decoding.swift */,
 				C5509FC31EE8371500524E71 /* URL+Coding.swift */,
 				C5509FC51EE838CE00524E71 /* CGSize+Decodable.swift */,
 				C5509FD01EE83E5600524E71 /* NetworkProvider.swift */,
@@ -370,7 +367,6 @@
 				C5509FBE1EE8365D00524E71 /* Response+Argo.swift in Sources */,
 				C5732FF81EE5782200EBBE3A /* UIColor+Initializers.swift in Sources */,
 				C5509FC01EE8366D00524E71 /* SignalProducer+Argo.swift in Sources */,
-				C5509FC21EE836D800524E71 /* RawRepresentable+Decoding.swift in Sources */,
 				C5509FCB1EE839DE00524E71 /* Reactive+UITableView.swift in Sources */,
 				C5732FFC1EE57AFA00EBBE3A /* UIImage+withColor.swift in Sources */,
 			);
