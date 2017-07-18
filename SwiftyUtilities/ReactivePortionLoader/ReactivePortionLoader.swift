@@ -11,45 +11,45 @@ import Argo
 import ReactiveSwift
 import Result
 
-protocol Portion: Decodable {
+public protocol Portion: Decodable {
     associatedtype Item: Decodable
     
     var items: [Item] { get }
     var totalCount: Int { get }
 }
 
-protocol ReactivePortionLoaderDelegate: class {
+public protocol ReactivePortionLoaderDelegate: class {
     func requestToken(forLoaderIdentifier identifier: String, offset: Int, limit: Int) -> TargetType
     func handle(error: Swift.Error)
 }
 
 class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.DecodedType == P {
-    typealias BatchUpdate = (insertions: [Int], modifications: [Int], deletions: [Int])
-    typealias Modification = (P.Item) -> P.Item
-    typealias Predicate = (P.Item) -> Bool
+    public typealias BatchUpdate = (insertions: [Int], modifications: [Int], deletions: [Int])
+    public typealias Modification = (P.Item) -> P.Item
+    public typealias Predicate = (P.Item) -> Bool
     
-    let identifier: String
+    public let identifier: String
     
-    weak var delegate: ReactivePortionLoaderDelegate?
+    public weak var delegate: ReactivePortionLoaderDelegate?
     
     // MARK: Reactive properties
-    var reloadFromStart: BindingTarget<()> {
+    public var reloadFromStart: BindingTarget<()> {
         return BindingTarget(lifetime: lifetime, action: { [weak self] in
             self?.loadInitialPortion()
         })
     }
     
-    var isNoResultsViewHidden: Property<Bool> {
+    public var isNoResultsViewHidden: Property<Bool> {
         return Property(_isNoResultsViewHidden)
     }
     
-    var loading: Property<Bool> {
+    public var loading: Property<Bool> {
         return Property(_loading)
     }
     
     // MARK: Signals
-    let reload: Signal<(), NoError>
-    let batchUpdate: Signal<BatchUpdate, NoError>
+    public let reload: Signal<(), NoError>
+    public let batchUpdate: Signal<BatchUpdate, NoError>
     
     // MARK: Private reactive properties
     fileprivate let _isNoResultsViewHidden: MutableProperty<Bool> = MutableProperty(true)
@@ -69,9 +69,9 @@ class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.DecodedType ==
     fileprivate var items: [P.Item] = []
     fileprivate var expectedTotalCount: Int = 0
     
-    init(dataProvider: NetworkProvider<T> = NetworkProvider<T>(),
-         portionSize: Int = 20,
-         identifier: String? = nil) {
+    public init(dataProvider: NetworkProvider<T> = NetworkProvider<T>(),
+                portionSize: Int = 20,
+                identifier: String? = nil) {
         self.dataProvider = dataProvider
         self.portionSize = portionSize
         if let userDefinedIdentifier = identifier {
@@ -88,11 +88,11 @@ class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.DecodedType ==
         currentRequestDisposable?.dispose()
     }
     
-    func loadInitialPortion() {
+    public func loadInitialPortion() {
         loadItems(offset: 0, limit: portionSize)
     }
     
-    func loadNext() {
+    public func loadNext() {
         if items.isEmpty {
             loadItems(offset: 0, limit: portionSize)
         } else {
@@ -112,7 +112,7 @@ class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.DecodedType ==
 
 // MARK: Read items
 extension ReactivePortionLoader {
-    func item(at index: Int) -> P.Item? {
+    public func item(at index: Int) -> P.Item? {
         guard 0..<items.count ~= index else {
             return nil
         }
@@ -120,18 +120,18 @@ extension ReactivePortionLoader {
         return items[index]
     }
     
-    var itemsCount: Int {
+    public var itemsCount: Int {
         return items.count
     }
     
-    var allItems: [P.Item] {
+    public var allItems: [P.Item] {
         return items
     }
 }
 
 // MARK: Modify items
 extension ReactivePortionLoader {
-    func modifyItems(with modification: Modification, where predicate: Predicate) {
+    public func modifyItems(with modification: Modification, where predicate: Predicate) {
         let indexes = items.indexes(where: predicate)
         
         for index in indexes {
@@ -143,7 +143,7 @@ extension ReactivePortionLoader {
         }
     }
     
-    func deleteItems(where predicate: Predicate) {
+    public func deleteItems(where predicate: Predicate) {
         let indexes = items.indexes(where: predicate)
         
         items = items.filter(predicate)
@@ -153,7 +153,7 @@ extension ReactivePortionLoader {
         }
     }
     
-    func deleteAll() {
+    public func deleteAll() {
         deleteItems(where: { _ in true })
     }
 }

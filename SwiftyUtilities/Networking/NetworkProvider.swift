@@ -28,7 +28,7 @@ public extension NetworkTarget {
 }
 
 open class NetworkProvider<Target>: ReactiveSwiftMoyaProvider<Target> where Target: NetworkTarget {
-    init() {
+    public init() {
         super.init(
             endpointClosure: NetworkProvider.customEndpointMapping,
             requestClosure: MoyaProvider.defaultRequestMapping,
@@ -40,7 +40,7 @@ open class NetworkProvider<Target>: ReactiveSwiftMoyaProvider<Target> where Targ
         )
     }
     
-    func req(_ target: Target) -> SignalProducer<Response, MoyaError> {
+    public func req(_ target: Target) -> SignalProducer<Response, MoyaError> {
         return request(target).filterSuccessfulStatusCodes().observe(on: UIScheduler())
     }
     
