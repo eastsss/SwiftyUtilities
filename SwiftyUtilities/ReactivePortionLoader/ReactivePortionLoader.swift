@@ -23,7 +23,7 @@ public protocol ReactivePortionLoaderDelegate: class {
     func handle(error: Swift.Error)
 }
 
-class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.DecodedType == P {
+public class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.DecodedType == P {
     public typealias BatchUpdate = (insertions: [Int], modifications: [Int], deletions: [Int])
     public typealias Modification = (P.Item) -> P.Item
     public typealias Predicate = (P.Item) -> Bool
