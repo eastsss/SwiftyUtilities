@@ -20,6 +20,7 @@ public protocol Portion: Decodable {
 
 public protocol ReactivePortionLoaderDelegate: class {
     func requestToken(forLoaderIdentifier identifier: String, offset: Int, limit: Int) -> TargetType
+    func didLoadPortion(offset: Int, limit: Int)
     func handle(error: Swift.Error)
 }
 
@@ -179,6 +180,8 @@ private extension ReactivePortionLoader {
                 guard let strongSelf = self else {
                     return
                 }
+                
+                strongSelf.delegate?.didLoadPortion(offset: offset, limit: limit)
                 
                 if offset == 0 {
                     strongSelf.items = portion.items
