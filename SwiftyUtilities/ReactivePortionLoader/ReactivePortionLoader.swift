@@ -69,7 +69,7 @@ public class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.Decoded
     
     // MARK: Data
     fileprivate var items: [P.Item] = []
-    fileprivate var expectedTotalCount: Int = 0
+    public fileprivate(set) var expectedTotalCount: Int = 0
     
     public init(dataProvider: NetworkProvider<T> = NetworkProvider<T>(),
                 portionSize: Int = 20,
