@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftyUtilities'
-  s.version          = '0.2.4'
+  s.version          = '0.2.5'
   s.summary          = 'A collection of reusable boilerplate code.'
   s.homepage         = 'https://github.com/eastsss/SwiftyUtilities'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

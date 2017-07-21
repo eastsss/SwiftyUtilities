@@ -20,7 +20,6 @@ public protocol Portion: Decodable {
 
 public protocol ReactivePortionLoaderDelegate: class {
     func requestToken(forLoaderIdentifier identifier: String, offset: Int, limit: Int) -> TargetType
-    func didLoadPortion(offset: Int, limit: Int)
     func handle(error: Swift.Error)
 }
 
@@ -28,10 +27,12 @@ public class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.Decoded
     public typealias BatchUpdate = (insertions: [Int], modifications: [Int], deletions: [Int])
     public typealias Modification = (P.Item) -> P.Item
     public typealias Predicate = (P.Item) -> Bool
+    public typealias DidLoadPortionCompletion = (_ offset: Int, _ limit: Int) -> Void
     
     public let identifier: String
     
     public weak var delegate: ReactivePortionLoaderDelegate?
+    public var didLoadPortion: DidLoadPortionCompletion?
     
     // MARK: Reactive properties
     public var reloadFromStart: BindingTarget<()> {
@@ -181,7 +182,7 @@ private extension ReactivePortionLoader {
                     return
                 }
                 
-                strongSelf.delegate?.didLoadPortion(offset: offset, limit: limit)
+                strongSelf.didLoadPortion?(offset, limit)
                 
                 if offset == 0 {
                     strongSelf.items = portion.items
