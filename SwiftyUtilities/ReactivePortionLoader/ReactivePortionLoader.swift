@@ -182,8 +182,6 @@ private extension ReactivePortionLoader {
                     return
                 }
                 
-                strongSelf.didLoadPortion?(offset, limit)
-                
                 if offset == 0 {
                     strongSelf.items = portion.items
                     strongSelf.reloadObserver.send(value: ())
@@ -200,6 +198,7 @@ private extension ReactivePortionLoader {
                 
                 strongSelf.expectedTotalCount = portion.totalCount
                 strongSelf._loading.value = false
+                strongSelf.didLoadPortion?(offset, limit)
             })
             .on(failed: { [weak self] error in
                 self?.delegate?.handle(error: error)
