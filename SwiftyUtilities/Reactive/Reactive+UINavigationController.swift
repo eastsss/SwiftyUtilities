@@ -12,7 +12,17 @@ import ReactiveCocoa
 
 extension Reactive where Base: UINavigationController {
     public func pushViewController(animated: Bool) -> BindingTarget<UIViewController> {
-        return makeBindingTarget { $0.pushViewController($1, animated: animated) }
+        return makeBindingTarget { base, controller in
+            let pushBlock = { [weak base] in
+                _ = base?.pushViewController(controller, animated: animated)
+            }
+            
+            if base.presentedViewController != nil {
+                base.dismiss(animated: animated, completion: pushBlock)
+            } else {
+                pushBlock()
+            }
+        }
     }
     
     public func popViewController(animated: Bool) -> BindingTarget<()> {
