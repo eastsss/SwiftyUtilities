@@ -31,6 +31,7 @@
 		C5732FF81EE5782200EBBE3A /* UIColor+Initializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FF71EE5782200EBBE3A /* UIColor+Initializers.swift */; };
 		C5732FFA1EE5788100EBBE3A /* UIColor+Highlighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FF91EE5788100EBBE3A /* UIColor+Highlighting.swift */; };
 		C5732FFC1EE57AFA00EBBE3A /* UIImage+withColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5732FFB1EE57AFA00EBBE3A /* UIImage+withColor.swift */; };
+		C5BA07E91F27A61200A8E296 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BA07E81F27A61200A8E296 /* StringExtensions.swift */; };
 		E166F5EA49701AF6E0CF3514 /* Pods_SwiftyUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F6134751335201EBC5F2A7 /* Pods_SwiftyUtilities.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		C5732FF71EE5782200EBBE3A /* UIColor+Initializers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Initializers.swift"; sourceTree = "<group>"; };
 		C5732FF91EE5788100EBBE3A /* UIColor+Highlighting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Highlighting.swift"; sourceTree = "<group>"; };
 		C5732FFB1EE57AFA00EBBE3A /* UIImage+withColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+withColor.swift"; sourceTree = "<group>"; };
+		C5BA07E81F27A61200A8E296 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		E40517FF06B37032126F1F88 /* Pods-SwiftyUtilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyUtilities.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyUtilities/Pods-SwiftyUtilities.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				C5732FD21EE5732400EBBE3A /* ArrayExtensions.swift */,
 				C5509FD21EE83E9500524E71 /* AppUtilities.swift */,
 				C5509FD41EE83F2100524E71 /* KeyValueStoring.swift */,
+				C5BA07E81F27A61200A8E296 /* StringExtensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5BA07E91F27A61200A8E296 /* StringExtensions.swift in Sources */,
 				C5732FF31EE577CD00EBBE3A /* ReuseProtocols.swift in Sources */,
 				C5732FF51EE577CD00EBBE3A /* UITableView+Dequeuing.swift in Sources */,
 				C5509FD31EE83E9500524E71 /* AppUtilities.swift in Sources */,
