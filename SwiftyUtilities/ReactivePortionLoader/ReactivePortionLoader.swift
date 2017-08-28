@@ -176,6 +176,7 @@ private extension ReactivePortionLoader {
             .mapObject(type: P.self)
             .on(starting: { [weak self] in
                 self?._loading.value = true
+                self?._isNoResultsViewHidden.value = true
             })
             .on(value: { [weak self] portion in
                 guard let strongSelf = self else {
