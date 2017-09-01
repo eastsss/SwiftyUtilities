@@ -202,6 +202,9 @@ private extension ReactivePortionLoader {
                 strongSelf.didLoadPortion?(offset, limit)
             })
             .on(failed: { [weak self] error in
+                if offset == 0 {
+                    self?._isNoResultsViewHidden.value = false
+                }
                 self?.delegate?.handle(error: error)
             })
             .on(event: { [weak self] event in
