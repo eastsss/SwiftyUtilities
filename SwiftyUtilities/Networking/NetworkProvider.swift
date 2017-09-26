@@ -14,10 +14,6 @@ public protocol NetworkTarget: TargetType {
 }
 
 public extension NetworkTarget {
-    var task: Task {
-        return .request
-    }
-    
     var sampleData: Data {
         return Data()
     }

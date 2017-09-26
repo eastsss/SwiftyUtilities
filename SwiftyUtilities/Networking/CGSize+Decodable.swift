@@ -10,7 +10,7 @@ import Argo
 import Curry
 import Runes
 
-extension CGSize: Decodable {
+extension CGSize: Argo.Decodable {
     public static func decode(_ json: JSON) -> Decoded<CGSize> {
         //to make semantics more explicit we should add cast to Decoded<Double>,
         //otherwise compiler won't know which initializer of CGSize should be used
