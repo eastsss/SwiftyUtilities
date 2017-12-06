@@ -148,7 +148,7 @@ extension ReactivePortionLoader {
     public func deleteItems(where predicate: Predicate) {
         let indexes = items.indexes(where: predicate)
         
-        items = items.filter(predicate)
+        items = items.filter { !predicate($0) }
         
         if !indexes.isEmpty {
             batchUpdateObserver.send(value: ([], [], indexes))
