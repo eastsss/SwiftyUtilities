@@ -2,7 +2,7 @@
 
 [![CI Status](http://img.shields.io/travis/eastsss/SwiftyUtilities.svg?style=flat)](https://travis-ci.org/eastsss/SwiftyUtilities)
 [![Version](https://img.shields.io/cocoapods/v/SwiftyUtilities.svg?style=flat)](http://cocoapods.org/pods/SwiftyUtilities)
-[![Swift v3.2](https://img.shields.io/badge/Swift-3.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift v4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![License](https://img.shields.io/cocoapods/l/SwiftyUtilities.svg?style=flat)](http://cocoapods.org/pods/SwiftyUtilities)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftyUtilities.svg?style=flat)](http://cocoapods.org/pods/SwiftyUtilities)
 
@@ -21,6 +21,7 @@ pod "SwiftyUtilities"
 | ----- | ----- |
 | 3.0  | 0.3.0+  |
 | 3.2  | 0.4.0+  |
+| 4.0  | 0.5.0+  |
 
 ## Author
 
