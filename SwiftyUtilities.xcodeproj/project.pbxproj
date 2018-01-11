@@ -7,15 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5509FBE1EE8365D00524E71 /* Response+Argo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FBD1EE8365D00524E71 /* Response+Argo.swift */; };
-		C5509FC01EE8366D00524E71 /* SignalProducer+Argo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FBF1EE8366D00524E71 /* SignalProducer+Argo.swift */; };
-		C5509FC41EE8371500524E71 /* URL+Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC31EE8371500524E71 /* URL+Coding.swift */; };
-		C5509FC61EE838CE00524E71 /* CGSize+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC51EE838CE00524E71 /* CGSize+Decodable.swift */; };
 		C5509FC91EE839C700524E71 /* Reactive+UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FC81EE839C700524E71 /* Reactive+UINavigationController.swift */; };
 		C5509FCB1EE839DE00524E71 /* Reactive+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FCA1EE839DE00524E71 /* Reactive+UITableView.swift */; };
 		C5509FCD1EE83A1400524E71 /* Reactive+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FCC1EE83A1400524E71 /* Reactive+UICollectionView.swift */; };
 		C5509FCF1EE83A3E00524E71 /* Reactive+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FCE1EE83A3E00524E71 /* Reactive+UIViewController.swift */; };
-		C5509FD11EE83E5600524E71 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD01EE83E5600524E71 /* NetworkProvider.swift */; };
 		C5509FD31EE83E9500524E71 /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD21EE83E9500524E71 /* AppUtilities.swift */; };
 		C5509FD51EE83F2100524E71 /* KeyValueStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD41EE83F2100524E71 /* KeyValueStoring.swift */; };
 		C5509FD81EE8415100524E71 /* ReactivePortionLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5509FD71EE8415100524E71 /* ReactivePortionLoader.swift */; };
@@ -38,15 +33,10 @@
 /* Begin PBXFileReference section */
 		149C81DDA2BC253FBEAFDE45 /* Pods-SwiftyUtilities.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyUtilities.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftyUtilities/Pods-SwiftyUtilities.release.xcconfig"; sourceTree = "<group>"; };
 		84F6134751335201EBC5F2A7 /* Pods_SwiftyUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5509FBD1EE8365D00524E71 /* Response+Argo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+Argo.swift"; sourceTree = "<group>"; };
-		C5509FBF1EE8366D00524E71 /* SignalProducer+Argo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignalProducer+Argo.swift"; sourceTree = "<group>"; };
-		C5509FC31EE8371500524E71 /* URL+Coding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Coding.swift"; sourceTree = "<group>"; };
-		C5509FC51EE838CE00524E71 /* CGSize+Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Decodable.swift"; sourceTree = "<group>"; };
 		C5509FC81EE839C700524E71 /* Reactive+UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UINavigationController.swift"; sourceTree = "<group>"; };
 		C5509FCA1EE839DE00524E71 /* Reactive+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UITableView.swift"; sourceTree = "<group>"; };
 		C5509FCC1EE83A1400524E71 /* Reactive+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UICollectionView.swift"; sourceTree = "<group>"; };
 		C5509FCE1EE83A3E00524E71 /* Reactive+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+UIViewController.swift"; sourceTree = "<group>"; };
-		C5509FD01EE83E5600524E71 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		C5509FD21EE83E9500524E71 /* AppUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
 		C5509FD41EE83F2100524E71 /* KeyValueStoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueStoring.swift; sourceTree = "<group>"; };
 		C5509FD71EE8415100524E71 /* ReactivePortionLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactivePortionLoader.swift; sourceTree = "<group>"; };
@@ -86,18 +76,6 @@
 				84F6134751335201EBC5F2A7 /* Pods_SwiftyUtilities.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C5509FBC1EE835FE00524E71 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				C5509FBD1EE8365D00524E71 /* Response+Argo.swift */,
-				C5509FBF1EE8366D00524E71 /* SignalProducer+Argo.swift */,
-				C5509FC31EE8371500524E71 /* URL+Coding.swift */,
-				C5509FC51EE838CE00524E71 /* CGSize+Decodable.swift */,
-				C5509FD01EE83E5600524E71 /* NetworkProvider.swift */,
-			);
-			path = Networking;
 			sourceTree = "<group>";
 		};
 		C5509FC71EE8397800524E71 /* Reactive */ = {
@@ -142,7 +120,6 @@
 			children = (
 				C5732FD11EE5732400EBBE3A /* Foundation */,
 				C5732FD31EE5732400EBBE3A /* UIKit */,
-				C5509FBC1EE835FE00524E71 /* Networking */,
 				C5509FC71EE8397800524E71 /* Reactive */,
 				C5509FD61EE8414600524E71 /* ReactivePortionLoader */,
 				C5732FC91EE569F800EBBE3A /* SwiftyUtilities.h */,
@@ -261,11 +238,12 @@
 		C5732FBD1EE569F800EBBE3A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = SwiftyUtilities;
 				TargetAttributes = {
 					C5732FC51EE569F800EBBE3A = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -359,21 +337,16 @@
 				C5509FD51EE83F2100524E71 /* KeyValueStoring.swift in Sources */,
 				C5732FF21EE577CD00EBBE3A /* NibLoader.swift in Sources */,
 				C5732FDB1EE5732400EBBE3A /* ArrayExtensions.swift in Sources */,
-				C5509FC61EE838CE00524E71 /* CGSize+Decodable.swift in Sources */,
 				C5509FCF1EE83A3E00524E71 /* Reactive+UIViewController.swift in Sources */,
 				C5509FCD1EE83A1400524E71 /* Reactive+UICollectionView.swift in Sources */,
 				C5732FF01EE577CD00EBBE3A /* UIImage+Masking.swift in Sources */,
 				C5732FF41EE577CD00EBBE3A /* UICollectionView+Dequeuing.swift in Sources */,
 				C5509FD81EE8415100524E71 /* ReactivePortionLoader.swift in Sources */,
-				C5509FC41EE8371500524E71 /* URL+Coding.swift in Sources */,
 				C5732FF11EE577CD00EBBE3A /* UIView+Pinning.swift in Sources */,
 				C5732FFA1EE5788100EBBE3A /* UIColor+Highlighting.swift in Sources */,
 				C5732FEF1EE577CD00EBBE3A /* String+Size.swift in Sources */,
 				C5509FC91EE839C700524E71 /* Reactive+UINavigationController.swift in Sources */,
-				C5509FD11EE83E5600524E71 /* NetworkProvider.swift in Sources */,
-				C5509FBE1EE8365D00524E71 /* Response+Argo.swift in Sources */,
 				C5732FF81EE5782200EBBE3A /* UIColor+Initializers.swift in Sources */,
-				C5509FC01EE8366D00524E71 /* SignalProducer+Argo.swift in Sources */,
 				C5509FCB1EE839DE00524E71 /* Reactive+UITableView.swift in Sources */,
 				C5732FFC1EE57AFA00EBBE3A /* UIImage+withColor.swift in Sources */,
 			);
@@ -392,7 +365,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -400,7 +375,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -446,7 +425,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -454,7 +435,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -499,7 +484,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftyutilities.SwiftyUtilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -519,7 +505,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftyutilities.SwiftyUtilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

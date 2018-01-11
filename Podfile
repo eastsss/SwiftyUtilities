@@ -12,11 +12,8 @@ target :'SwiftyUtilities' do
 	inhibit_all_warnings!
     
     #network requests and mapping
-    pod 'Moya/ReactiveSwift', '~> 9.0.0'
-    pod 'Argo', '~> 4.1.2'
-    pod 'Curry', '~> 3.0.0'
-    pod 'Ogra', '~> 4.1.1'
+    pod 'Moya/ReactiveSwift', '~> 11.0.0-beta.1'
     
     #misc
-    pod 'ReactiveCocoa', '~> 6.0.2'
+    pod 'ReactiveCocoa', '~> 7.1.0-rc.2'
 end

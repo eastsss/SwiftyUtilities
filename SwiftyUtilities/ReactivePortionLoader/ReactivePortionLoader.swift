@@ -7,12 +7,11 @@
 //
 
 import Moya
-import Argo
 import ReactiveSwift
 import Result
 
-public protocol Portion: Argo.Decodable {
-    associatedtype Item: Argo.Decodable
+public protocol Portion: Decodable {
+    associatedtype Item: Decodable
     
     var items: [Item] { get }
     var totalCount: Int { get }
@@ -23,7 +22,7 @@ public protocol ReactivePortionLoaderDelegate: class {
     func handle(error: Swift.Error)
 }
 
-public class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.DecodedType == P {
+public class ReactivePortionLoader<P: Portion, T: TargetType> {
     public typealias BatchUpdate = (insertions: [Int], modifications: [Int], deletions: [Int])
     public typealias Modification = (P.Item) -> P.Item
     public typealias Predicate = (P.Item) -> Bool
@@ -63,7 +62,7 @@ public class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.Decoded
     fileprivate let batchUpdateObserver: Signal<BatchUpdate, NoError>.Observer
     
     // MARK: Network request related properties
-    fileprivate let dataProvider: NetworkProvider<T>
+    fileprivate let dataProvider: MoyaProvider<T>
     fileprivate let portionSize: Int
     fileprivate var currentRequestDisposable: Disposable?
     
@@ -71,7 +70,7 @@ public class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.Decoded
     fileprivate var items: [P.Item] = []
     public fileprivate(set) var expectedTotalCount: Int = 0
     
-    public init(dataProvider: NetworkProvider<T> = NetworkProvider<T>(),
+    public init(dataProvider: MoyaProvider<T> = MoyaProvider<T>(),
                 portionSize: Int = 20,
                 identifier: String? = nil) {
         self.dataProvider = dataProvider
@@ -171,9 +170,10 @@ private extension ReactivePortionLoader {
             fatalError("ReactivePortionLoader delegate should return correct instance in requestToken(forLoaderIdentifier:offset:limit)")
         }
         
-        currentRequestDisposable = dataProvider
-            .req(token)
-            .mapObject(type: P.self)
+        currentRequestDisposable = dataProvider.reactive
+            .request(token)
+            .observe(on: UIScheduler())
+            .map(P.self)
             .on(starting: { [weak self] in
                 self?._loading.value = true
                 self?._isNoResultsViewHidden.value = true
@@ -209,7 +209,7 @@ private extension ReactivePortionLoader {
             })
             .on(event: { [weak self] event in
                 switch event {
-                case .interrupted, .failed(_):
+                case .interrupted, .failed:
                     self?._loading.value = false
                 default:
                     return

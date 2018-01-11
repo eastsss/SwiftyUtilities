@@ -1,41 +1,28 @@
 PODS:
-  - Alamofire (4.5.1)
-  - Argo (4.1.2):
-    - Runes (>= 4.0.0)
-  - Curry (3.0.0)
-  - Moya/Core (9.0.0):
+  - Alamofire (4.6.0)
+  - Moya/Core (11.0.0-beta.1):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - Moya/ReactiveSwift (9.0.0):
+  - Moya/ReactiveSwift (11.0.0-beta.1):
     - Moya/Core
-    - ReactiveSwift (~> 2.0)
-  - Ogra (4.1.2):
-    - Argo (= 4.1.2)
-  - ReactiveCocoa (6.0.2):
-    - ReactiveSwift (~> 2.0)
-  - ReactiveSwift (2.0.1):
+    - ReactiveSwift (~> 3.0)
+  - ReactiveCocoa (7.1.0-rc.2):
+    - ReactiveSwift (= 3.1.0-rc.1)
+  - ReactiveSwift (3.1.0-rc.1):
     - Result (~> 3.2)
-  - Result (3.2.3)
-  - Runes (4.0.1)
+  - Result (3.2.4)
 
 DEPENDENCIES:
-  - Argo (~> 4.1.2)
-  - Curry (~> 3.0.0)
-  - Moya/ReactiveSwift (~> 9.0.0)
-  - Ogra (~> 4.1.1)
-  - ReactiveCocoa (~> 6.0.2)
+  - Moya/ReactiveSwift (~> 11.0.0-beta.1)
+  - ReactiveCocoa (~> 7.1.0-rc.2)
 
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  Argo: 5db06502fc1222d83011f574243089dab25202ff
-  Curry: eb3d2c75aec678b3cc7fb2729d2ad6dd121531d1
-  Moya: cf5e6ee93af526532f92614004b8ad2ea60fd845
-  Ogra: fc959d1038250a83e4ffa11ece1a6bbd3a1e547f
-  ReactiveCocoa: 9dcbd8275374f35a6e5fcce01a93b860a7b92c44
-  ReactiveSwift: 60a29ff35988a964fd2bb759755cb6594de523fc
-  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
-  Runes: ff20f163b478ac2c0e18158d6086fd5b1997f983
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Moya: 551552d4354a09bd5d94bd44e445bb3f6a8fb56f
+  ReactiveCocoa: b5e441bb6bb07260f24c295cdc708d3cb6528343
+  ReactiveSwift: 987d12afbb7ca0666cc242eae8164cf08fbef956
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: 07123474233f9d4ef39a519f803796c9e84909ad
+PODFILE CHECKSUM: 582925dff7cf25e0013fed0c31b0f0320b43b5c6
 
 COCOAPODS: 1.3.1

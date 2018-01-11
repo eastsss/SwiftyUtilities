@@ -12,7 +12,7 @@ extension String {
     public func inserting(separator: String, afterEvery amount: Int) -> String {
         var result: String = ""
         
-        characters.enumerated().forEach { index, character in
+        enumerated().forEach { index, character in
             if index % amount == 0 && index > 0 {
                 result += separator
             }
