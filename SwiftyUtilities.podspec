@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftyUtilities'
-  s.version          = '0.4.1'
+  s.version          = '0.5.0'
   s.summary          = 'A collection of reusable boilerplate code.'
   s.homepage         = 'https://github.com/eastsss/SwiftyUtilities'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -19,24 +19,15 @@ Pod::Spec.new do |s|
       ss.framework = 'UIKit'
   end
 
-  s.subspec "Networking" do |ss|
-      ss.source_files = 'SwiftyUtilities/Networking/**/*'
-      ss.dependency 'SwiftyUtilities/Foundation'
-      ss.dependency 'Moya/ReactiveSwift', '~> 9.0.0'
-      ss.dependency 'Argo', '~> 4.1.2'
-      ss.dependency 'Curry', '~> 3.0.0'
-      ss.dependency 'Ogra', '~> 4.1.1'
-  end
-
   s.subspec "Reactive" do |ss|
       ss.source_files = 'SwiftyUtilities/Reactive/**/*'
       ss.dependency 'SwiftyUtilities/Foundation'
-      ss.dependency 'ReactiveCocoa', '~> 6.0.2'
+      ss.dependency 'ReactiveCocoa', '~> 7.1.0-rc.2'
   end
 
   s.subspec "ReactivePortionLoader" do |ss|
       ss.source_files = 'SwiftyUtilities/ReactivePortionLoader/**/*'
       ss.dependency 'SwiftyUtilities/Foundation'
-      ss.dependency 'SwiftyUtilities/Networking'
+      ss.dependency 'Moya/ReactiveSwift', '~> 11.0.0-beta.1'
   end
 end
