@@ -53,27 +53,30 @@ public class ReactivePortionLoader<P: Portion, T: TargetType> {
     public let batchUpdate: Signal<BatchUpdate, NoError>
     
     // MARK: Private reactive properties
-    fileprivate let _isNoResultsViewHidden: MutableProperty<Bool> = MutableProperty(true)
-    fileprivate let _loading: MutableProperty<Bool> = MutableProperty(false)
-    fileprivate let (lifetime, token) = Lifetime.make()
+    private let _isNoResultsViewHidden: MutableProperty<Bool> = MutableProperty(true)
+    private let _loading: MutableProperty<Bool> = MutableProperty(false)
+    private let (lifetime, token) = Lifetime.make()
     
     // MARK: Observers
-    fileprivate let reloadObserver: Signal<(), NoError>.Observer
-    fileprivate let batchUpdateObserver: Signal<BatchUpdate, NoError>.Observer
+    private let reloadObserver: Signal<(), NoError>.Observer
+    private let batchUpdateObserver: Signal<BatchUpdate, NoError>.Observer
     
     // MARK: Network request related properties
-    fileprivate let dataProvider: MoyaProvider<T>
-    fileprivate let portionSize: Int
-    fileprivate var currentRequestDisposable: Disposable?
+    private let dataProvider: MoyaProvider<T>
+    private let jsonDecoder: JSONDecoder
+    private let portionSize: Int
+    private var currentRequestDisposable: Disposable?
     
     // MARK: Data
-    fileprivate var items: [P.Item] = []
-    public fileprivate(set) var expectedTotalCount: Int = 0
+    private var items: [P.Item] = []
+    public private(set) var expectedTotalCount: Int = 0
     
     public init(dataProvider: MoyaProvider<T> = MoyaProvider<T>(),
+                jsonDecoder: JSONDecoder = JSONDecoder(),
                 portionSize: Int = 20,
                 identifier: String? = nil) {
         self.dataProvider = dataProvider
+        self.jsonDecoder = jsonDecoder
         self.portionSize = portionSize
         if let userDefinedIdentifier = identifier {
             self.identifier = userDefinedIdentifier
@@ -173,7 +176,7 @@ private extension ReactivePortionLoader {
         currentRequestDisposable = dataProvider.reactive
             .request(token)
             .observe(on: UIScheduler())
-            .map(P.self)
+            .map(P.self, using: jsonDecoder)
             .on(starting: { [weak self] in
                 self?._loading.value = true
                 self?._isNoResultsViewHidden.value = true
