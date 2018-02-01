@@ -176,6 +176,7 @@ private extension ReactivePortionLoader {
         currentRequestDisposable = dataProvider.reactive
             .request(token)
             .observe(on: UIScheduler())
+            .filterSuccessfulStatusCodes()
             .map(P.self, using: jsonDecoder)
             .on(starting: { [weak self] in
                 self?._loading.value = true
