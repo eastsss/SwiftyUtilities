@@ -21,7 +21,7 @@ public extension SignalProducerProtocol where Value == Moya.Response, Error == M
      
      - returns: returns Observable of mapped objects
      */
-    public func mapObject<T: Decodable>(type: T.Type, rootKey: String? = nil) -> SignalProducer<T, Error> where T == T.DecodedType {
+    public func mapObject<T: Argo.Decodable>(type: T.Type, rootKey: String? = nil) -> SignalProducer<T, Error> where T == T.DecodedType {
         
         return producer.flatMap(.latest) { response -> SignalProducer<T, Error> in
             
@@ -36,7 +36,7 @@ public extension SignalProducerProtocol where Value == Moya.Response, Error == M
     }
     
     /// convenience for mapping object without passing in decodable type as argument
-    public func mapObject<T: Decodable>(rootKey: String? = nil) -> SignalProducer<T, Error> where T == T.DecodedType {
+    public func mapObject<T: Argo.Decodable>(rootKey: String? = nil) -> SignalProducer<T, Error> where T == T.DecodedType {
         return mapObject(type: T.self, rootKey: rootKey)
     }
     
@@ -48,7 +48,7 @@ public extension SignalProducerProtocol where Value == Moya.Response, Error == M
      
      - returns: returns Observable of mapped object array
      */
-    public func mapArray<T: Decodable>(type: T.Type, rootKey: String? = nil) -> SignalProducer<[T], Error> where T == T.DecodedType {
+    public func mapArray<T: Argo.Decodable>(type: T.Type, rootKey: String? = nil) -> SignalProducer<[T], Error> where T == T.DecodedType {
         
         return producer.flatMap(.latest) { response -> SignalProducer<[T], Error> in
             
@@ -63,7 +63,7 @@ public extension SignalProducerProtocol where Value == Moya.Response, Error == M
     }
     
     /// Convenience method for mapping array without passing in decodable type as argument
-    public func mapArray<T: Decodable>(rootKey: String? = nil) -> SignalProducer<[T], Error> where T == T.DecodedType {
+    public func mapArray<T: Argo.Decodable>(rootKey: String? = nil) -> SignalProducer<[T], Error> where T == T.DecodedType {
         return mapArray(type: T.self, rootKey: rootKey)
     }
 }

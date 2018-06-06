@@ -11,8 +11,8 @@ import Argo
 import ReactiveSwift
 import Result
 
-public protocol Portion: Decodable {
-    associatedtype Item: Decodable
+public protocol Portion: Argo.Decodable {
+    associatedtype Item: Argo.Decodable
     
     var items: [Item] { get }
     var totalCount: Int { get }
