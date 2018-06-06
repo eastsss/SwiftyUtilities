@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 workspace 'SwiftyUtilities'
 project 'SwiftyUtilities.xcodeproj'
@@ -12,11 +12,11 @@ target :'SwiftyUtilities' do
 	inhibit_all_warnings!
     
     #network requests and mapping
-    pod 'Moya/ReactiveSwift', '~> 8.0.3'
+    pod 'Moya/ReactiveSwift', '~> 11.0.2'
     pod 'Argo', '~> 4.1.2'
-    pod 'Curry', '~> 3.0.0'
-    pod 'Ogra', '~> 4.1.1'
+    pod 'Curry', '~> 4.0.0'
+    pod 'Ogra', '~> 4.1.2'
     
     #misc
-    pod 'ReactiveCocoa', '~> 5.0.2'
+    pod 'ReactiveCocoa', '~> 7.2.0'
 end

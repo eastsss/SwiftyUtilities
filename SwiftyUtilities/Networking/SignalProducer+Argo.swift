@@ -30,7 +30,7 @@ public extension SignalProducerProtocol where Value == Moya.Response, Error == M
             } catch let error as MoyaError {
                 return SignalProducer(error: error)
             } catch {
-                return SignalProducer(error: Error.underlying(error))
+                return SignalProducer(error: Error.underlying(error, response))
             }
         }
     }
@@ -57,7 +57,7 @@ public extension SignalProducerProtocol where Value == Moya.Response, Error == M
             } catch let error as MoyaError {
                 return SignalProducer(error: error)
             } catch {
-                return SignalProducer(error: Error.underlying(error))
+                return SignalProducer(error: Error.underlying(error, response))
             }
         }
     }

@@ -15,7 +15,7 @@ public protocol NetworkTarget: TargetType {
 
 public extension NetworkTarget {
     var task: Task {
-        return .request
+        return .requestPlain
     }
     
     var sampleData: Data {
@@ -27,28 +27,28 @@ public extension NetworkTarget {
     }
 }
 
-open class NetworkProvider<Target>: ReactiveSwiftMoyaProvider<Target> where Target: NetworkTarget {
+open class NetworkProvider<Target>: MoyaProvider<Target> where Target: NetworkTarget {
+    
     public init() {
         super.init(
             endpointClosure: NetworkProvider.customEndpointMapping,
-            requestClosure: MoyaProvider.defaultRequestMapping,
-            stubClosure: MoyaProvider.neverStub,
-            manager: MoyaProvider<Target>.defaultAlamofireManager(),
+            requestClosure: NetworkProvider.defaultRequestMapping,
+            stubClosure: NetworkProvider.neverStub,
+            manager: NetworkProvider<Target>.defaultAlamofireManager(),
             plugins: [],
-            stubScheduler: nil,
             trackInflights: false
         )
     }
     
     public func req(_ target: Target) -> SignalProducer<Response, MoyaError> {
-        return request(target).filterSuccessfulStatusCodes().observe(on: UIScheduler())
+        return self.reactive.request(target).filterSuccessfulStatusCodes().observe(on: UIScheduler())
     }
     
-    private final class func customEndpointMapping<T>(target: T) -> Endpoint<T> where T: NetworkTarget {
+    private final class func customEndpointMapping<T: NetworkTarget>(for target: T) -> Endpoint {
         let endpoint = MoyaProvider.defaultEndpointMapping(for: target)
             .adding(newHTTPHeaderFields: [
                 "X-App-Version": AppUtilities.appVersion
-                ])
+            ])
         
         if !target.additionalHeaders.isEmpty {
             return endpoint.adding(newHTTPHeaderFields: target.additionalHeaders)

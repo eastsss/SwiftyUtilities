@@ -59,8 +59,8 @@ public class ReactivePortionLoader<P: Portion, T: NetworkTarget> where P.Decoded
     fileprivate let (lifetime, token) = Lifetime.make()
     
     // MARK: Observers
-    fileprivate let reloadObserver: Observer<(), NoError>
-    fileprivate let batchUpdateObserver: Observer<BatchUpdate, NoError>
+    fileprivate let reloadObserver: Signal<(), NoError>.Observer
+    fileprivate let batchUpdateObserver: Signal<BatchUpdate, NoError>.Observer
     
     // MARK: Network request related properties
     fileprivate let dataProvider: NetworkProvider<T>
