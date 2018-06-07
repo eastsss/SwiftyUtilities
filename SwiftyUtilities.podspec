@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftyUtilities'
-  s.version          = '0.3.1'
+  s.version          = '0.3.2'
   s.summary          = 'A collection of reusable boilerplate code.'
   s.homepage         = 'https://github.com/eastsss/SwiftyUtilities'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'eastsss' => 'anatox91@yandex.ru' }
   s.source           = { :git => 'https://github.com/eastsss/SwiftyUtilities.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.default_subspec  = "Foundation"
   
   s.subspec "Foundation" do |ss|
@@ -22,16 +22,16 @@ Pod::Spec.new do |s|
   s.subspec "Networking" do |ss|
       ss.source_files = 'SwiftyUtilities/Networking/**/*'
       ss.dependency 'SwiftyUtilities/Foundation'
-      ss.dependency 'Moya/ReactiveSwift', '~> 8.0.3'
+      ss.dependency 'Moya/ReactiveSwift', '~> 11.0.2'
       ss.dependency 'Argo', '~> 4.1.2'
-      ss.dependency 'Curry', '~> 3.0.0'
-      ss.dependency 'Ogra', '~> 4.1.1'
+      ss.dependency 'Curry', '~> 4.0.0'
+      ss.dependency 'Ogra', '~> 4.1.2'
   end
 
   s.subspec "Reactive" do |ss|
       ss.source_files = 'SwiftyUtilities/Reactive/**/*'
       ss.dependency 'SwiftyUtilities/Foundation'
-      ss.dependency 'ReactiveCocoa', '~> 5.0.2'
+      ss.dependency 'ReactiveCocoa', '~> 7.2.0'
   end
 
   s.subspec "ReactivePortionLoader" do |ss|

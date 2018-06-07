@@ -9,7 +9,7 @@
 import Argo
 import Ogra
 
-extension URL: Decodable {
+extension URL: Argo.Decodable {
     public static func decode(_ json: JSON) -> Decoded<URL> {
         guard case .string(let urlString) = json else {
             return .typeMismatch(expected: "String", actual: json)
@@ -23,7 +23,7 @@ extension URL: Decodable {
     }
 }
 
-extension URL: Encodable {
+extension URL: Ogra.Encodable {
     public func encode() -> JSON {
         return JSON.string(absoluteString)
     }
